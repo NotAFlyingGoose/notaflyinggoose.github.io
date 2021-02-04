@@ -1,0 +1,117 @@
+body {
+  background-color: #151D21;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Navigation bar */
+.topnav {
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  display: inline-block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #151D21;
+  height: 3.5em;
+}
+
+/* Style the image in the navigation bar */
+.topnav img {
+  left: 1em;
+  position: absolute;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a.nav-link {
+  position: relative;
+  color: #dddddd;
+  margin: 0.5em;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/* Style the links when hovered */
+.topnav a.nav-link:hover {
+  color: white;
+}
+
+/* Showcase */
+.showcase {
+  background-size: cover;
+  width: 100% - 60px;
+  height: 100%;
+  text-align: center;
+  margin-top: 10%;
+
+}
+
+/* Showcase title */
+.showcase h1 {
+  margin: 0;
+  font-size: 5em;
+}
+
+/* Showcase subtitle */
+.showcase h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Stylized link */
+.link {
+  color: #dddddd;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+/* Stylized link hover */
+.link:hover {
+  color: white;
+}
+
+.projects {
+  width: 100%;
+  display:flex;
+}
+
+.projects section {
+  position: relative;
+  background-color: #182024;
+  margin: 1em;
+  padding: 1em;
+  flex-grow: 1;
+}
+
+.projects .project .title {
+  text-align: center;
+  text-decoration: none;
+}
+.projects .project a {
+  text-decoration: none;
+    color: #dddddd;
+}
+
+.projects .project .link {
+  text-align: center;
+}
+
+.projects .project .preview {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.project-details {
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+}
+
+.green {
+  color: #4CAF50;
+}
