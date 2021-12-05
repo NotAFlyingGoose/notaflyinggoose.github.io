@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not a flying goose</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            twemoji.parse(document.body,
+                    {folder: 'svg', ext: '.svg'}
+            );
+          }
+    </script>
+    <style>
+        img.emoji {
+            width:0.75em;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <img src="/images/duck.png">
+    <a href="/"><img src="/images/duck.png"><a>
+    <a class="nav-link" href="/projects">projects<a>
+    <a class="nav-link" href="/videos">videos<a>
+    <a class="nav-link" href="/about">about<a>
+  </div>
+
+  <div class="showcase">
+    <h1>🎥 </h1>
+    <h1 class="gradient">Vids </h1>
+    <h1>🍿</h1>
+  </div>
+
+  <div class="projects">
+    <section>
+      <div class="project">
+        <hr color=#151D21>
+        <h1 class="title">
+          <a href="https://www.youtube.com/channel/UCNb2kFuAuIVgKPbFMy3ErOg" target="_blank" rel="noopener noreferrer">
+            Latest
+          </a>
+        </h1>
+        <iframe class="latestVideoEmbed" vnum='0' cid="UCNb2kFuAuIVgKPbFMy3ErOg" width="33%" height="340" frameborder="0" allowfullscreen></iframe>
+        <iframe class="latestVideoEmbed" vnum='1' cid="UCNb2kFuAuIVgKPbFMy3ErOg" width="33%" height="340" frameborder="0" allowfullscreen></iframe>
+        <iframe class="latestVideoEmbed" vnum='2' cid="UCNb2kFuAuIVgKPbFMy3ErOg" width="33%" height="340" frameborder="0" allowfullscreen></iframe>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+        function loadVideo(iframe) {
+          $.getJSON(reqURL + iframe.getAttribute('cid'),
+            function(data) {
+              var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+              console.log(videoNumber);
+              var link = data.items[videoNumber].link;
+              id = link.substr(link.indexOf("=") + 1);
+              iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=1&autoplay=1");
+            }
+          );
+        }
+        var iframes = document.getElementsByClassName('latestVideoEmbed');
+        for (var i = 0, len = iframes.length; i < len; i++) {
+          loadVideo(iframes[i]);
+        }
+        </script>
+          <hr color=#151D21>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

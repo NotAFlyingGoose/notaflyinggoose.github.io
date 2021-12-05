@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not a flying goose</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            twemoji.parse(document.body,
+                    {folder: 'svg', ext: '.svg'}
+            );
+          }
+    </script>
+    <style>
+        img.emoji {
+            width:0.75em;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <img src="/images/duck.png">
+    <a href="/"><img src="/images/duck.png"><a>
+    <a class="nav-link" href="/projects">projects<a>
+    <a class="nav-link" href="/videos">videos<a>
+    <a class="nav-link" href="/about">about<a>
+  </div>
+
+  <div class="showcase">
+    <h1 class="gradient">My Projects </h1>
+    <h1>👌</h1>
+  </div>
+
+  <div class="projects">
+
+      <div class="project" id="goosemod">
+        <hr color=#151D21>
+        <h1 class="title gradient2">
+          <a href="https://www.curseforge.com/minecraft/mc-mods/goosemod" target="_blank" rel="noopener noreferrer">
+            GooseMod
+          </a>
+        </h1>
+        <div class="description">
+          <p>
+            In this minecraft mod, I added many custom blocks, entites and features to the game.
+            The idea was, what would I add to minecraft if I worked at mojang.
+            Not all the features are *ahem* vanilla friendly,
+            but I think most of them fit reasonably well into the game.
+          </p>
+        </div>
+        <div class="preview"  id="goosemod-preview"></div>
+        <h2><a href="https://www.curseforge.com/minecraft/mc-mods/goosemod" target="_blank" rel="noopener noreferrer" class="link">Take A look</a></h2>
+        <hr color=#151D21>
+      </div>
+
+      <div class="project" id="fishflix">
+        <hr color=#151D21>
+        <h1 class="title gradient2">
+          <a href="/fishflix/">
+            Fishflix
+          </a>
+        </h1>
+        <div class="description">
+          <p>
+              Netflix but for fish. That's literally it.
+          </p>
+        </div>
+        <div class="preview"  id="fishflix-preview"></div>
+        <h2><a href="/fishflix/" class="link">Take A Look</a></h2>
+        <hr color=#151D21>
+      </div>
+
+  </div>
+
+
+  <div class="projects">
+      <h1 class="gradient" style="text-align:center; font-size: 3em;">Near Completed Projects</h1>
+
+      <div class="project" id="wibbit">
+        <hr color=#151D21>
+        <h1 class="title gradient2">
+          <a href="#wibbit" target="_blank" rel="noopener noreferrer">
+            Wibbit
+          </a>
+        </h1>
+        <div class="description">
+          <p>
+            After seeing many of the issues which social media creates, I decided to make my own social media platform.
+          </p>
+          <p>
+            It is (almost) entirly decentralized which means that there are no Wibbit Servers that can crash or that I
+            have to maintain in order for the platform to continue running. Everything is done between the users themselves.
+            You are able to make posts between friends and repost things which could introduce you
+            to other parts of the platform.
+          </p>
+        </div>
+        <img src="/images/wibbit.png" width="75%" style="display: block; margin-left: auto; margin-right: auto;">
+        <h2><a href="#wibbit" class="link">Coming 2022</a></h2>
+        <hr color=#151D21>
+      </div>
+
+  </div>
+
+
+
+  <style>
+    #goosemod-preview {
+      animation-name: goosemod-slideshow;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    #fishflix-preview {
+      animation-name: fishflix-slideshow;
+      animation-duration: 16.667s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    @keyframes fishflix-slideshow {
+      0% {background-image: url("/fishflix/images/background.jpg");}
+      25% {background-image: url("/fishflix/images/fish/img3.jpg");}
+      50% {background-image: url("/fishflix/images/fish/img19.jpg");}
+      75% {background-image: url("/fishflix/images/fish/img44.jpg");}
+      100% {background-image: url("/fishflix/images/fish/img43.jpg");}
+    }
+
+    @keyframes goosemod-slideshow {
+      0% {background-image: url("/images/new boats.png");}
+      25% {background-image: url("/images/the mask.png");}
+      50% {background-image: url("/images/dragon sleeping.png");}
+      75% {background-image: url("/images/dragon awake.png");}
+      100% {background-image: url("/images/active reactor.png");}
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not a flying goose</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/style/script.js"></script>
+</head>
+<body>
+  <div class="topnav">
+    <a href="/"><img src="/images/duck.png"><a>
+    <a class="nav-link" href="/projects">projects<a>
+    <a class="nav-link" href="/videos">videos<a>
+    <a class="nav-link" href="/about">about<a>
+  </div>
+
+  <div class="showcase">
+    <h1>💾 </h1>
+    <h1 class="gradient">The Runman</h1>
+    <h1> 💻</h1>
+    <style>
+      body {
+        animation-name: slideshow;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      .topnav {
+        background-color: #00000000;
+      }
+
+      @keyframes slideshow {
+        0% {background-image: url("/images/runman.png");}
+        33% {background-image: url("/images/runman 2.png");}
+        66% {background-image: url("/images/runman 3.png");}
+        100% {background-image: url("/images/runman.png");}
+      }
+    </style>
+
+    <div class="project-details">
+      <p>
+        <b>Coming soon!</b>
+      </p>
+      <p>
+        A long time ago I had the idea to build my own operating system.
+        Nothing special, just something that you could use.
+      </p>
+      <p>
+        It is still in the works, and honestly it could be easily hacked, but if you want something with low level access to the hardware, then this is it.
+      </p>
+    </div>
+  </div>
+
+  <style type="text/css">
+    #bottom {
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      text-align: center;
+      position: absolute;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'BuenaParkJF';
+  src: url('BuenaParkJF.ttf') format('truetype'); /* IE9 Compat Modes */
+}
+
+body {
+  background-color: #151D21;
+  background: -webkit-linear-gradient(to left,   #151D21, #29323c);
+  background: -moz-linear-gradient(to left, #151D21, #29323c);
+  background: linear-gradient(to left, #151D21, #29323c);
+  background-size: 100%;
+  background-repeat: cover;
+  color: white;
+  font-family: 'BuenaParkJF';
+}
+
+/* Navigation bar */
+.topnav {
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  display: inline-block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #151D21;
+  background: -webkit-linear-gradient(to left, #151D21, #29323c);
+  background: -moz-linear-gradient(to left, #151D21, #29323c);
+  background: linear-gradient(to left, #151D21, #29323c);
+  height: 3.5em;
+}
+
+/* Style the image in the navigation bar */
+.topnav img {
+  left: 1em;
+  position: absolute;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a.nav-link {
+  position: relative;
+  color: #dddddd;
+  margin: 0.5em;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/* Style the links when hovered */
+.topnav a.nav-link:hover {
+  color: white;
+}
+
+/* Showcase */
+.showcase {
+  background-size: cover;
+  width: 100% - 60px;
+  height: 100%;
+  text-align: center;
+  margin-top: 10%;
+
+}
+
+/* Showcase title */
+.showcase h1 {
+  margin: 0;
+  font-size: 5em;
+  display:inline;
+}
+
+/* Showcase subtitle */
+.showcase h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Stylized link */
+.link {
+  color: #dddddd;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+/* Stylized link hover */
+.link:hover {
+  color: white;
+}
+
+.gradient {
+  background: #25cc0f;
+  background: -webkit-linear-gradient(to right, #800080, #fa1e4e, #0f9b0f, #00f260, #0cebeb, #20e3b2, #29ffc6, #fdbb2d, #e100ff, #7f00ff);
+  background: -moz-linear-gradient(to right, #800080, #fa1e4e, #0f9b0f, #00f260, #0cebeb, #20e3b2, #29ffc6, #fdbb2d, #e100ff, #7f00ff);
+  background: linear-gradient(to right, #800080, #fa1e4e, #0f9b0f, #00f260, #0cebeb, #20e3b2, #29ffc6, #fdbb2d, #e100ff, #7f00ff);
+  background-size: 1000%;
+
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: flow 30s ease-in-out infinite;
+}
+
+.gradient2 {
+  background: #25cc0f;
+  background: -webkit-linear-gradient(to right, #29ffc6, #00f260, #e100ff, #7f00ff, #800080, #fa1e4e, #fdbb2d, #0f9b0f, #0cebeb);
+  background: -moz-linear-gradient(to right, #29ffc6, #00f260, #e100ff, #7f00ff, #800080, #fa1e4e, #fdbb2d, #0f9b0f, #0cebeb);
+  background: linear-gradient(to right, #29ffc6, #00f260, #e100ff, #7f00ff, #800080, #fa1e4e, #fdbb2d, #0f9b0f, #0cebeb);
+  background-size: 1000%;
+
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: flow 30s ease-in-out infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/**.gradient-animated {
+  background: #25CC0F;
+  background: -webkit-linear-gradient(to bottom right, #25CC0F 0%, #9E3212 80%);
+  background: -moz-linear-gradient(to bottom right, #25CC0F 0%, #9E3212 80%);
+  background: linear-gradient(to bottom right, #25CC0F 0%, #9E3212 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}**/
+
+.projects {
+  width: 70%;
+  margin: auto;
+}
+
+.project {
+  width: 100%;
+  background-color: #182024;
+  position: relative;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.project .title {
+  text-align: center;
+  text-decoration: none;
+}
+
+.project a {
+  text-decoration: none;
+    color: #dddddd;
+}
+
+.project h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project .preview {
+  width: 75%;
+  height: 400px;
+  object-fit: center;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-details {
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+}
+
+.green {
+  color: #4CAF50;
+}

@@ -1,0 +1,348 @@
+html, body {
+	scroll-behavior: smooth;
+    margin: 0;
+	background-color: #141414;
+	max-width: 100%;
+    overflow-x: visible;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	background-color: #141414;
+	margin-bottom: 10px;
+	z-index: 4;
+	width: 100%;
+	border-bottom: 5px solid rgb(25, 25, 25);
+}
+.showcase-top {
+	position: relative;
+	z-index: 2;
+	height: 90px;
+}
+
+.showcase-top img {
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	left: 120%;
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+}
+
+
+.showcase-top a {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.showcase-top .icon {
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+}
+
+.showcase-content {
+	position: relative;
+	z-index: 2;
+	width: 65%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 9rem;
+}
+
+.showcase-content h1 {
+	font-weight: 700;
+	font-size: 5.2rem;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+}
+
+.movie-showcase{
+	background-color: black;
+	position: relative;
+	z-index: 1;
+	height: 70%;
+	text-align: left;
+	height: 1000%;
+}
+.movie-showcase-image{
+	z-index: 2;
+	width: 55%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-0%, -50%);
+}
+.movie-showcase h1{
+	z-index: 3;
+	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	text-align: left;
+	margin-left: 4rem;
+}
+.movie-showcase p{
+	z-index: 3;
+	max-width: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78,78,78);
+	text-align: left;
+	margin-left: 4.5rem;
+}
+.info{
+	margin-left: 4.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78,78,78);
+}
+.info .mpaa{
+	border-radius: 5px;
+	color: rgb(140, 140, 140);
+	background-color: rgb(47, 47, 47);
+}
+.play {
+	margin-left: 4.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	border-radius: 5px;
+	color: rgb(140, 140, 140);
+	background-color: rgb(47, 47, 47);
+}
+h1 {
+	margin-left: 4.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78,78,78);
+    text-align: left;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 0px 0;
+}
+.wrapper section .right-arrow{
+	position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+	right:0
+}
+.wrapper section .left-arrow{
+	position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+	left:0
+}
+.wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+.wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+.wrapper section .title a{
+    padding: 0 2px;
+    transition: 250ms all;
+}
+
+.wrappero {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+	overflow: hidden;
+    scroll-behavior: smooth;
+}
+.wrappero section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 0px 0;
+}
+.wrappero section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+.wrappero section .item:hover {
+    margin: 0px 40px;
+    transform: scale(1.1);
+}
+.wrappero section .right-arrow {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+	z-index: 1;
+	right:0
+}
+.wrappero section .left-arrow {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+	z-index: 1;
+	left:0
+}
+.wrappero section .title a{
+    padding: 0 2px;
+    transition: 250ms all;
+}
+
+.wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.wrappero section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.wrappero section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 0.4rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 2px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-rounded {
+	border-radius: 5px;
+}
+
+.btn-xl {
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+.btn-lg {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
+}
+
+.btn-icon {
+	margin-left: 1rem;
+}
+
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.playa{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration-line: none;
+	list-style-type: none;
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.sorry{
+	margin-left: 4.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85,85,85);
+    text-align: left;
+}
+
+#signin{
+	text-align: center;
+}
+
+.footer,
+.footer a,
+footer ul{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration-line: none;
+	list-style-type: none;
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
