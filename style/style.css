@@ -1,6 +1,12 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 @font-face {
   font-family: 'BuenaParkJF';
   src: url('BuenaParkJF.ttf') format('truetype'); /* IE9 Compat Modes */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,13 +17,13 @@ body {
   background-size: 100%;
   background-repeat: cover;
   color: white;
-  font-family: 'BuenaParkJF';
+  font-family: 'Fira Code', monospace;
+  font-weight: normal;
 }
 
 /* Navigation bar */
 .topnav {
   width: 100%;
-  height: 2em;
   text-align: center;
   display: inline-block;
   position: -webkit-sticky; /* Safari */
@@ -28,28 +34,28 @@ body {
   background: -webkit-linear-gradient(to left, #151D21, #29323c);
   background: -moz-linear-gradient(to left, #151D21, #29323c);
   background: linear-gradient(to left, #151D21, #29323c);
-  height: 3.5em;
+  height: 5em;
 }
 
-/* Style the image in the navigation bar */
-.topnav img {
+.topnav .ascii-art {
   left: 1em;
   position: absolute;
-  height: 60px;
+  font-family: monospace;
+  text-decoration: none;
+  color: #dddddd;
+  white-space: pre;
+  text-align: left;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.6em;
+  font-weight: lighter;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a.nav-link {
   position: relative;
-  color: #dddddd;
   margin: 0.5em;
-  text-decoration: none;
-  font-size: 40px;
-}
-
-/* Style the links when hovered */
-.topnav a.nav-link:hover {
-  color: white;
+  font-size: 2.5em;
+  top: 0.5em;
 }
 
 /* Showcase */
@@ -58,8 +64,7 @@ body {
   width: 100% - 60px;
   height: 100%;
   text-align: center;
-  margin-top: 10%;
-
+  margin-top: 5%;
 }
 
 /* Showcase title */
@@ -77,14 +82,15 @@ body {
 
 /* Stylized link */
 .link {
-  color: #dddddd;
+  color: #aaaaaa;
   text-decoration: none;
   font-weight: lighter;
+  transition: 0.3s;
 }
 
 /* Stylized link hover */
 .link:hover {
-  color: white;
+  color: #dddddd;
 }
 
 .gradient {
@@ -155,6 +161,13 @@ body {
 .project .title {
   text-align: center;
   text-decoration: none;
+}
+
+.project .description {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 75%;
 }
 
 .project a {
